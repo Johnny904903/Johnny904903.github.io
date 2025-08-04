@@ -15,9 +15,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      REPO_URL: "yutian81/yutian81.github.io"  # 远程仓库的 URL
+      REPO_URL: "Johnny904903/Johnny904903.github.io"  # 远程仓库的 URL
       BUILD_PATH: ".vitepress/dist"  # 构建输出路径
-      CUSTOM_DOMAIN: "blog2.811520.xyz"  # 自定义域名
+      CUSTOM_DOMAIN: "Johnny904903/Johnny904903.github.io"  # 自定义域名
 
     steps:
       - name: Set up Node.js
@@ -55,7 +55,4 @@ jobs:
           git push --force origin pages
 
         env:
-          REPO_URL: "Johnny904903/Johnny904903.github.io"   
-          BUILD_PATH: ".vitepress/dist"   
-          CUSTOM_DOMAIN: "Johnny904903/Johnny904903.github.io" 
-   
+          CI: true
